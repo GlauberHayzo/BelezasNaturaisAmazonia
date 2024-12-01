@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezas Naturais Interativas</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Explorando Belezas Naturais do Brasil</h1>
+
+        <section id="descricoes">
+            <div class="descricao-card">
+                <h2 style="text-align: center;">Amazônia</h2>
+                <p class="texto-curto">A maior floresta tropical do mundo...</p>
+                <p style="text-align: justify;" class="texto-completo hidden">A Amazônia é a maior floresta tropical do mundo, com uma vasta extensão que cobre parte de nove países da América do Sul, incluindo Brasil, Peru, Colômbia, Venezuela, Equador, Bolívia, Guiana, Suriname e a Guiana Francesa. Ela desempenha um papel crucial no equilíbrio climático global e na biodiversidade do planeta.
+                    A Amazônia é um dos maiores e mais diversos ecossistemas do mundo. Estima-se que abriga cerca de 10% das espécies conhecidas de plantas e animais do planeta. 
+                A floresta é lar de uma impressionante variedade de mamíferos, répteis, anfíbios, insetos e aves, muitas das quais ainda não foram completamente catalogadas.
+                    Entre as espécies mais emblemáticas estão o onça-pintada, o boto-cor-de-rosa, o macaco-aranha, diversas espécies de anfíbios exóticos, e uma grande variedade de aves, como o araras, papagaios, e garças.
+                    Além disso, a flora amazônica inclui mais de 390 bilhões de árvores e uma grande variedade de plantas medicinais e com alto valor econômico, como a açaí, cupuacu, guaraná, e castanha-do-pará.
+                </p>
+                <button class="toggle-btn" data-target="amazonia">Ver Mais</button>
+            </div>
+            <div class="descricao-card">
+                <h2 style="text-align: center;">Pantanal</h2>
+                <p class="texto-curto">O maior pântano do mundo...</p>
+                <p style="text-align: justify;" class="texto-completo hidden">O Pantanal é um dos maiores e mais ricos ecossistemas de zonas úmidas do planeta, localizado principalmente no Brasil, mas também se estendendo por partes da Bolívia e do Paraguai. A região cobre aproximadamente 140.000 km² e é conhecida por sua biodiversidade impressionante, sendo um dos locais mais biodiversos do mundo.
+                    O Pantanal é uma planície alagável, que experimenta uma variação de níveis de água ao longo do ano, com uma estação seca e uma estação chuvosa. Durante a estação das chuvas, as águas do rio Paraguai e seus afluentes inundam grande parte da região, criando um vasto mosaico de lagos, pântanos e áreas alagadas. Esse ciclo de alagamento e secagem é o que torna o Pantanal único, criando um ambiente muito dinâmico e diversificado.
+
+A vegetação do Pantanal varia de campos alagados e florestas inundadas a cerrado e manguezais. A flora da região é adaptada a esse ciclo de cheias e secas e, portanto, é rica em espécies aquáticas e semi-aquáticas.
+                </p>
+                <button class="toggle-btn" data-target="pantanal">Ver Mais</button>
+            </div>
+        </section>
+        
+    </div>
+
+    <section id="galeria">
+        <div class="imagens-container">
+            <div class="imagem-item">
+                <img src="/assets/images/maxresdefault.jpg" alt="Amazônia" data-full="/assets/images/amazonia.jpg">
+            </div>
+            <div class="imagem-item">
+                <img src="/assets/images/maxresdefault (1).jpg" alt="Pantanal" data-full="/assets/images/pantanal-1-full.jpg">
+            </div>
+            <div class="imagem-item">
+                <img src="/assets/images/amazonia-2.jpg" alt="Amazônia 2" data-full="/assets/images/amazonia-2-full.jpg">
+            </div>
+            <div class="imagem-item">
+                <img src="/assets/images/pantanal-2.jpg" alt="Pantanal 2" data-full="/assets/images/pantanal-2-full.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <section id="feedback">
+        <h2 style="text-align: center;">Deixe seu Feedback</h2>
+        <form id="formulario-feedback">
+            <div class="form-grupo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-grupo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-grupo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </section>
+    <div id="modal-imagem" class="modal hidden">
+        <span class="fechar">&times;</span>
+        <img class="modal-conteudo" id="img-modal" alt="Imagem ampliada">
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
